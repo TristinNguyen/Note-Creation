@@ -14,14 +14,14 @@ jest.mock('fs');
 test("creates a note object", () => {
   const startingNotes = [];
   const newNote =     {
-    "title": "mary",
-    "text": "had a little lamb",
+    "title": "The Help",
+    "text": "in Jackson, Missouri",
     "id": "2"
   };
   const noteListItems = createNewNote(newNote,startingNotes);
 
-  expect(startingNotes[0].title).toBe("mary");
-  expect(startingNotes[0].text).toBe("had a little lamb");
+  expect(startingNotes[0].title).toBe("The Help");
+  expect(startingNotes[0].text).toBe("in Jackson, Missouri");
   expect(startingNotes[0].id).toBe("2");
 });
 
